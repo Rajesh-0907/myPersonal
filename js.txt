@@ -1,0 +1,125 @@
+const ele = document.getElementById('Announcement');
+var ele1 = document.getElementById('Tasks');
+var ele2 = document.getElementById('Mentors');
+var ele3 = document.getElementById('Submissions');
+var ele4 = document.getElementById('domain');
+var ele5 = document.getElementById('download');
+var div = document.getElementById('cont') ;
+var div1 = document.getElementById('cont1') ;
+var div2 = document.getElementById('cont2') ;
+var div3 = document.getElementById('cont3') ;
+var clas =  document.getElementById("con");
+var h =  document.getElementById("h11");
+h.addEventListener('click', function(){
+  clas.style.display = "inline";
+});
+h.addEventListener('dblclick', function(){
+  clas.style.display = "none";
+});
+
+
+ele.addEventListener('click', MyFunction);
+
+ele1.addEventListener('click', MyFunction1);
+ele2.addEventListener('click', MyFunction2);
+ele3.addEventListener('click', MyFunction3);
+ele4.addEventListener('click', MyFunction4);
+ele5.addEventListener('click', MyFunction5);
+ele.addEventListener('mouseover', () => hover(ele), true);
+ele.addEventListener('mouseout', () => out(ele), false);
+ele1.addEventListener('mouseover', () => hover(ele1), true);
+ele1.addEventListener('mouseout', () => out(ele1), false);
+ele2.addEventListener('mouseover', () => hover(ele2), true);
+ele2.addEventListener('mouseout', () => out(ele2), false);
+ele3.addEventListener('mouseover', () => hover(ele3), true);
+ele3.addEventListener('mouseout', () => out(ele3), false);
+ele4.addEventListener('mouseover', () => hover(ele4), true);
+ele4.addEventListener('mouseout', () => out(ele4), false);
+ele5.addEventListener('mouseover', () => hover(ele5), true);
+ele5.addEventListener('mouseout', () => out(ele5), false);
+
+function hover(e){
+  if(e.style.backgroundColor == 'green')
+  {
+    e.style.backgroundColor = 'green';
+  }
+  else {
+    e.style.backgroundColor = 'rgb(24, 24, 24)';
+  }
+
+}
+
+function out(e){
+ if(e.style.backgroundColor == 'green')
+ {
+   e.style.backgroundColor = 'green';
+ }
+ else {
+   e.style.backgroundColor = 'transparent';
+ }
+
+}
+
+function MyFunction(){
+
+  ele.style.background = 'green';
+  ele1.style.background = 'transparent';
+  ele2.style.background = 'transparent';
+  ele3.style.background = 'transparent';
+    ele4.style.background = 'transparent';
+    ele5.style.background = 'transparent';
+    div.style.display  = "inline";
+    clas.style.display = "none";
+
+
+
+
+
+}
+function MyFunction1(){
+  ele1.style.background = 'green';
+  ele.style.background = 'transparent';
+  ele2.style.background = 'transparent';
+  ele3.style.background = 'transparent'
+    ele4.style.background = 'transparent';
+    ele5.style.background = 'transparent';
+
+div.style.display  = "none";
+}
+function MyFunction2(){
+  ele2.style.background = 'green';;
+  ele.style.background = 'transparent';
+  ele1.style.background = 'transparent';
+  ele3.style.background = 'transparent';
+    ele4.style.background = 'transparent';
+    ele5.style.background = 'transparent';
+
+}
+function MyFunction3(){
+  ele3.style.background = 'green';
+  ele.style.background = 'transparent';
+  ele1.style.background = 'transparent';
+  ele2.style.background = 'transparent';
+  ele4.style.background = 'transparent';
+    ele5.style.background = 'transparent';
+
+}
+function MyFunction4(){
+  ele4.style.background = 'green';
+  ele.style.background = 'transparent';
+  ele1.style.background = 'transparent';
+  ele2.style.background = 'transparent';
+  ele3.style.background = 'transparent';
+  ele5.style.background = 'transparent';
+
+}
+
+function MyFunction5(){
+  ele5.style.background = 'green';
+  ele.style.background = 'transparent';
+  ele1.style.background = 'transparent';
+  ele2.style.background = 'transparent';
+  ele3.style.background = 'transparent';
+    ele4.style.background = 'transparent';
+
+}
